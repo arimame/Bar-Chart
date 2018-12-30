@@ -3,13 +3,20 @@
 #wrapper {
   display: grid;
   grid-template-areas:
-  "ya yt bc bc bc bc bc bc bc bc bc bc";
+  "ya yt bc bc bc bc bc bc bc bc bc bc"
+  ". . xa xa xa xa xa xa xa xa xa xa";
   grid-gap: 5px;
 
 }
 
 #y-axis {
   grid-area: ya;
+}
+
+#x-axis {
+  grid-area: xa;
+  display: flex;
+  align-items: flex-end;
 }
 
 #y-axis-ticks {
